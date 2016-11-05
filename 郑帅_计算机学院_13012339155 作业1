@@ -1,0 +1,29 @@
+import jdk.internal.util.xml.impl.Input;     //大小写转换编程二
+
+import java.io.IOException;
+import java.io.InputStream;
+
+/**
+ * Created by 2016 on 2016/11/5.
+ */
+public class exchange {
+    public static void main (String[] args) throws IOException {
+        InputStream input = System.in;
+        StringBuffer buf = new StringBuffer();
+        System.out.print("请输入: ");
+        int temp = 0;
+        while ((temp = input.read()) != -1) {
+            char c = (char) temp;
+
+            if (c == '\n') {
+                break;
+            }
+            c = (char) (c - 32);
+            buf.append(c);
+        }
+        System.out.println("结果为；"+buf);
+        input.close();
+    }
+}
+
+}
