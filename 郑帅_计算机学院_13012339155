@@ -1,0 +1,13 @@
+import java.util.Scanner;       //大小写转换
+
+/**
+ * Created by 2016 on 2016/11/5.
+ */
+public class exchang2 {
+    public static void main(String args[]){
+        Scanner scanner=new Scanner(System.in);
+        String str=scanner.nextLine();
+        System.out.println(str.toUpperCase());
+        scanner.close();
+    }
+}
