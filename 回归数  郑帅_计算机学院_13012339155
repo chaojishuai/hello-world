@@ -1,0 +1,25 @@
+import com.sun.org.apache.xalan.internal.xsltc.dom.MultiDOM;
+
+import java.util.Scanner;
+/**
+ * Created by 2016 on 2016/11/6.
+ */
+public class huiws {
+    public static void main(String ards[]){
+        Scanner in= new Scanner(System.in);
+        int number =in .nextInt();
+        int c=number;
+        int a = 0;
+        for (int i = 1; ; i++) {
+            int k = number % 10;
+            a = a *10 + k;
+            number = number / 10;
+            if (number == 0) break;
+        }
+        if (a == c){
+            System.out.println("是回文数");}
+        else{
+            System.out.println("不是回文数");}
+    }
+    }
+
