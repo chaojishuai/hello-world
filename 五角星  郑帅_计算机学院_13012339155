@@ -1,0 +1,31 @@
+public class wjx {
+    public static void main(String[] args) {
+                for (int i = 1; i <= 2; i++) {
+                    for (int n = 7; n >= i; n--) {
+                        System.out.print(" ");
+                    }
+                    for (int k = 1; k <= i; k++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println("");
+                }
+        for (int b = 1; b <= 3; b++) {
+            for (int c = 1; c <= b; c++) {
+                System.out.print(" ");
+            }
+            for (int a = 7; a >= b; a--) {
+                System.out.print("* ");
+            }
+            System.out.println("");
+        }
+        for (int x = 5;  x<= 7; x++) {
+            for (int y = 8; y >= x; y--) {
+                System.out.print(" ");
+            }
+            for (int z = 2; z <= x; z++) {
+                System.out.print("* ");
+            }
+            System.out.println("");
+        }
+            }
+        }
